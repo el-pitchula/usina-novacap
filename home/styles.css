@@ -12,14 +12,15 @@ body {
 }
 
 header {
-  background-color: #007bff;
+  background-color: #1b4899;
   color: #fff;
   padding: 20px 0;
   text-align: center;
 }
 
 .logo {
-  max-width: 200px; /* Defina o tamanho adequado para o seu logo */
+  max-width: 80px;
+  justify-content: space-around;
 }
 
 nav ul {
@@ -53,14 +54,14 @@ main {
 }
 
 .card {
-  max-width: 800px; /* Largura da caixa de boas-vindas */
+  max-width: 800px;
   background: #fff;
   padding: 30px;
   box-sizing: border-box;
   border-radius: 10px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   text-align: center;
-  margin: 20px auto; /* Centraliza a caixa na página */
+  margin: 20px auto;
 }
 
 .card-content {
@@ -105,7 +106,7 @@ main {
 .btn {
   display: inline-block;
   padding: 12px 30px;
-  background-color: #007bff;
+  background-color: #455e97;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
