@@ -1,0 +1,10 @@
+.monitoramento-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  #chart-container {
+    height: 400px;
+  }
+  
