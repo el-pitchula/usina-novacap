@@ -19,7 +19,7 @@ header {
 }
 
 .logo {
-  max-width: 80px;
+  max-width: 200px;
   justify-content: space-around;
 }
 
@@ -78,6 +78,7 @@ main {
 .image img {
   max-width: 100%;
   height: auto;
+  border-radius: 5px;
 }
 
 .text {
@@ -106,7 +107,7 @@ main {
 .btn {
   display: inline-block;
   padding: 12px 30px;
-  background-color: #455e97;
+  background-color: #3367d6;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
@@ -115,7 +116,7 @@ main {
 }
 
 .btn:hover {
-  background-color: #0056b3;
+  background-color: #3367d6;
 }
 
 .footer {

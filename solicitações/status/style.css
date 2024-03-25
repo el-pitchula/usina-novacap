@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background-color: #4285f4; /* Cor do Google */
+  background-color: #1b4899;
   color: white;
   padding: 10px 20px;
   display: flex;
@@ -14,8 +14,8 @@ header {
   justify-content: space-between;
 }
 
-.logo img {
-  max-width: 100px;
+.logo img{
+  max-width: 80px;
 }
 
 nav {
@@ -24,6 +24,7 @@ nav {
 
 nav .botao-selecao {
   background-color: transparent;
+  border-radius: 5px;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -48,8 +49,9 @@ main {
 
 .card {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
   gap: 20px;
+  align-items: center;
 }
 
 .card .informacao {
@@ -70,6 +72,14 @@ main {
   text-transform: capitalize;
 }
 
+.fa-eye{ /* não funciono preciso arrumar o ícone */
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 .botao-olho {
   width: 30px;
   height: 30px;
@@ -79,7 +89,7 @@ main {
 }
 
 .botao-olho::before {
-  content: '\1F441'; /* Ícone de olho Unicode */
+  content: '\1F441'; /* icone de olho Unicode (trocar)*/
   font-size: 20px;
 }
 
@@ -98,17 +108,39 @@ main {
 }
 
 .busca .botao-busca {
-  background-color: #4285f4; /* Cor do Google */
+  background-color: #1b4899;
   color: white;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  align-items: center;
 }
 
 .busca .botao-busca:hover {
-  background-color: #3367d6; /* Cor mais escura ao passar o mouse */
+  background-color: #3367d6; /* ao passar o mouse */
+}
+
+.criar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.criar .botao-criar {
+  background-color: #1b4899;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-items: center;
+}
+
+.criar .criar-criar:hover {
+  background-color: #3367d6; /* ao passar o mouse */
 }
 
 .modal {
