@@ -1,35 +1,51 @@
-<!doctype html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <link href="style.css" rel="stylesheet" />  
-        <title>Login</title>
-    </head>
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-    <body>
-        <div>
-            <h1>Sistema de Usina</h1>
-            <h2>Novacap</h2>
-        </div>
-        <section class="card">
-            <h2><p> Login </p></h2><br>
-            <form class="form">
-                <!-- <label> Usuário: </label>
-                <textarea placeholder="Digite o usuário" minlength="8"></textarea> -->
-                <label class="label"> Usuário: <input type="text" id="User" name="Name" /></label>
-                <label class="label"> e-mail: <input type="text" id="email" name="email" /></label>
-                <label class="label"> Senha: <input type="text" id="pass" name="Password" /></label>
-                <p><button type="submit"> Entrar </button></p>
+<head>
+  <meta charset="UTF-8">
+  <title>Home - Novacap Usina</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <img src="file:///C:/Users/jaysa.sousa/Documents/GitHub/usina-novacap/midia/img/logo.png" alt="logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="#" class="btn">Sobre</a></li>
+          <li><a href="#" class="btn">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="card">
+        <div class="card-content">
+          <div class="image">
+            <img src="file:///C:/Users/jaysa.sousa/Documents/GitHub/usina-novacap/midia/img/boasvindas.jpg" alt="boas-vindas" class="welcome-image">
+          </div>
+          <div class="text">
+            <h2>Bem-vindo!</h2>
+            <form id="login-form" class="form">
+              <div class="form-group">
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" name="username" required>
+              </div>
+              <div class="form-group">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+              </div>
+              <button type="submit" class="btn">Entrar</button>
             </form>
-        </section>
+          </div>
+        </div>
+      </section>
+    </main>
 
-        <footer class="footer">
-            <nav>
-                <ul>
-                  <li><a href="#"> Sobre </a></li>
-                  <li><a href="#"> Contato </a></li>
-                </ul>
-            </nav>              
-        </footer>
-    </body>
+    <footer class="footer">
+      <p>&copy; 2024 Novacap Usina - Todos os direitos reservados.</p>
+    </footer>
+  </div>
+</body>
 </html>

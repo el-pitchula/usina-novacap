@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solicitações de Materiais</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Logo da empresa">
+    </div>
+    <nav>
+      <button class="botao-selecao ativo" data-filtro="todos">Todos</button>
+      <button class="botao-selecao" data-filtro="solicitante">Solicitante</button>
+      <button class="botao-selecao" data-filtro="materiais">Materiais</button>
+      <button class="botao-selecao" data-filtro="motorista">Motorista</button>
+      <button class="botao-selecao" data-filtro="automovel">Automóvel</button>
+      <button class="botao-selecao" data-filtro="usuario">Usuário</button>
+    </nav>
+  </header>
+  <main>
+    <section class="busca">
+      <input type="text" placeholder="Pesquisar...">
+      <button class="botao-busca">Buscar</button>
+    </section>
+    <section class="conteudo">
+      <div class="card todos">
+        <div class="informacao">
+          <span class="id">ID: 15612316</span>
+          <span class="status enviado">Enviado</span>
+          <button class="botao-olho" data-id="15612316"></button>
+        </div>
+        <div class="informacao">
+          <span class="id">ID: 15612317</span>
+          <span class="status processando">Processando</span>
+          <button class="botao-olho" data-id="15612317"></button>
+        </div>
+        <div class="informacao">
+          <span class="id">ID: 15612318</span>
+          <span class="status em-espera">Em espera</span>
+          <button class="botao-olho" data-id="15612318"></button>
+        </div>
+      </div>
+      <div class="card solicitante" style="display: none;">
+        <!-- Conteúdo para a seleção "Solicitante" -->
+      </div>
+      <div class="card materiais" style="display: none;">
+        <!-- Conteúdo para a seleção "Materiais" -->
+      </div>
+      <div class="card motorista" style="display: none;">
+        <!-- Conteúdo para a seleção "Motorista" -->
+      </div>
+      <div class="card automovel" style="display: none;">
+        <!-- Conteúdo para a seleção "Automóvel" -->
+      </div>
+      <div class="card usuario" style="display: none;">
+        <!-- Conteúdo para a seleção "Usuário" -->
+      </div>
+    </section>
+  </main>
+  <div class="modal">
+    <div class="conteudo-modal">
+      <!-- Conteúdo do modal -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
