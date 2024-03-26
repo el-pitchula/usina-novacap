@@ -17,6 +17,10 @@ body {
   .logo img {
     max-width: 80px;
   }
+
+  .user img {
+    max-width: 30px;
+  }
   
   nav {
     display: flex;
@@ -72,7 +76,6 @@ body {
     text-transform: capitalize;
   }
 
-
   .editar {
     display: flex;
     align-items: center;
@@ -84,6 +87,7 @@ body {
     color: white;
     border: none;
     padding: 10px 20px;
+    margin-right: 10px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -91,7 +95,40 @@ body {
   }
   
   .editar .editar-editar:hover {
-    background-color: #3367d6; /* ao passar o mouse */
+    background-color: #3367d6;
+  }
+  
+  .botao-editar {
+    transition: transform 0.3s ease;
+  }
+  
+  .botao-editar:hover {
+    transform: scale(1.1);
+  }
+
+
+  .botao-voltar {
+    transition: transform 0.3s ease;
+  }
+  
+  .botao-voltar:hover {
+    transform: scale(1.1);
+  }
+  
+  
+  .busca .botao-voltar:hover {
+    background-color: #3367d6;
+  }
+  
+  .editar .botao-voltar {
+    background-color: #1b4899;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-items: center;
   }
 
   .modal {
@@ -119,6 +156,10 @@ body {
     }
   
     .logo img {
+      max-width: 80px;
+    }
+
+    .user img {
       max-width: 80px;
     }
   

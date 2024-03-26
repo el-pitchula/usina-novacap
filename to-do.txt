@@ -35,7 +35,6 @@ problemas:
   2- edição das informações em "details" (mais provável por função)
   3- criar + (não precisa criar outro arquivo)
   4- uma tela diferente para cada aba (resolveria o problema 3)
-  +: o que é ADASA? unvcp? criação de software. BAIXAR LINUX E MATLAB!!!
 
 
   atualizações:
@@ -127,17 +126,23 @@ prioridade:
     c) criar mais interações no projeto em um geral (utilize alguns frameworks js para fazer animação)
     d) tirar "sobre" e "contato" do cabeçalho colocar o "sobre" como uma animação da imagem de boasvindas sendo virado para mostrar o "sobre" como uma carta e o contato no footer
     e) adicionar a quantidade de materiais solicitada entre o id e o processo no mesmo card
-  2 - tornar "login" e "details" responsivo:
+2 - tornar "login" e "details" responsivo:
     a) botão para "voltar" ao lado do botão "criar +" na pasta "solicitações/detalhes" para voltar para a tela de "solicitações/status"
     b) botão "criar +" (add um card de id + status) editável para pôr as informações da solicitação
     c) ir para a tela do perfil do usuário quando clicar no botão "usuário" (ainda não fiz essa tela mas você pode criar)
     d) fazer barra de busca funcionar para os elementos existentes (buscar com base no número de id da solicitação)
-    f) ato de login responsivo
-  3 - barra de pesquisa não muda/limpa a pesquisa quando passo para outra aba como
+    f) atos de login responsivo
+3 - barra de pesquisa não muda/limpa a pesquisa quando passo para outra aba como
   "materiais" provavelmente pq estão como ramificações da mesma barra de busca.
   Obs: o botão "criar +" também está aparecendo em todas as abas
-  4 - o usuário também está recebendo a barra de pesquisa quando na verdade 
+4 - o usuário também está recebendo a barra de pesquisa quando na verdade 
   deveria mostrar o perfil.
-  5 - configurar modal para funcionar corretamente (estudo sobre DOM).
-  6 - criar cadastrar materiais.
-  7 - mudar a programação pro inglês!!! (pode fazer os comentário em português)
+5 - configurar modal para funcionar corretamente (estudo sobre DOM).
+6 - criar cadastrar materiais.
+7 - mudar a programação pro inglês!!! (pode fazer os comentário em português)
+aprender a usar o table no html
+
+!!!!!! preciso criar um blog ou portfolio do 0 para ter uma noção geral
+mudar o que for possivel para icons
+fazer os botões realizarem de fato as ações
+  - principalmente mudança de tela para realizar animações na transição

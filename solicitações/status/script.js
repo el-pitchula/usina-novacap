@@ -46,3 +46,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
+  document.querySelector('.botao-buscar[data-filtro="materiais"]').addEventListener('click', function() {
+    campoBusca.value = '';
+  });

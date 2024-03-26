@@ -19,7 +19,11 @@
       <button class="botao-selecao" data-filtro="materiais">Materiais</button>
       <button class="botao-selecao" data-filtro="motorista">Motorista</button>
       <button class="botao-selecao" data-filtro="automovel">Automóvel</button>
-      <button class="botao-selecao" data-filtro="usuario">Usuário</button>
+      <button class="botao-selecao" data-filtro="usuario">
+        <div class="user">
+          <img src="file:///C:/Users/jaysa.sousa/Documents/GitHub/usina-novacap/midia/img/user.png" alt="User">
+        </div>
+      </button>
     </nav>
   </header>
 
@@ -36,18 +40,26 @@
       <div class="card todos">
         <div class="informacao">
           <span class="id">ID: 15612316</span>
+          <span class="material">CBUQ</span>
+          <span class="quantidade">Qnt.: 10</span>
           <span class="status enviado">Enviado</span>
           <button class="botao-olho" data-id="15612316"></button>
           <!-- <div><i class="fa fa-eye"></i></div> -->
           <!-- <button><i class="fa fa-eye" data-id="15612316"></i></button> -->
         </div> 
+
         <div class="informacao">
           <span class="id">ID: 15612317</span>
+          <span class="material">material 2</span>
+          <span class="quantidade">Qnt.: 2</span>
           <span class="status processando">Processando</span>
           <button class="botao-olho" data-id="15612317"></button>
         </div>
+
         <div class="informacao">
           <span class="id">ID: 15612318</span>
+          <span class="material">material 3</span>
+          <span class="quantidade">Qnt.: 23</span>
           <span class="status em-espera">Em espera</span>
           <button class="botao-olho" data-id="15612318"></button>
         </div>
@@ -69,5 +81,27 @@
   </div>
 
   <script src="script.js"></script>
+
+<!-- para poder criar novas solicitações
+  <div id="app">
+
+    <button class="botao">Adicionar</button>
+    <div class="box">
+    </div>
+  
+  </div>
+  <script>
+    var btnElement = document.querySelector('button.botao').addEventListener("click", criarQuadrado);
+    var newQuadrado = document.querySelector('div.box');
+    newQuadrado.style.backgroundColor = red;
+    newQuadrado.style.width = 100;
+    newQuadrado.style.height = 100;
+  
+    function criarQuadrado() {
+      btnElement.createElement(newQuadrado);
+    }
+  </script>
+  -->
+
 </body>
 </html>
