@@ -39,7 +39,8 @@ problemas:
 
 
   atualizações:
-  1- preciso fazer funconar:
+  1- criar tela de perfil do usuário
+  2- preciso fazer funconar:
   a) botão-olho
     .botao-olho::before {
   content: '\f06e'; /* código do ícone de olho da Font Awesome */
