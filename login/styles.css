@@ -8,6 +8,8 @@ body {
 .container {
   display: flex;
   flex-direction: column;
+  align-items: center; /* Centralizar na horizontal */
+  justify-content: center; /* Centralizar na vertical */
   min-height: 100vh;
 }
 

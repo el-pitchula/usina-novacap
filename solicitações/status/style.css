@@ -72,6 +72,12 @@ main {
   text-transform: capitalize;
 }
 
+.botao-olho::before {
+  content: '\f06e';
+  font-family: 'FontAwesome'; /* especifica a fonte */
+  font-size: 20px;
+}
+
 .fa-eye{ /* não funciono preciso arrumar o ícone */
   width: 30px;
   height: 30px;
@@ -142,6 +148,19 @@ main {
 .criar .criar-criar:hover {
   background-color: #3367d6; /* ao passar o mouse */
 }
+
+
+
+.botao-criar {
+  /* Outros estilos aqui */
+  transition: transform 0.3s ease;
+}
+
+.botao-criar:hover {
+  transform: scale(1.1); /* Aumenta o tamanho em 10% */
+}
+
+
 
 .modal {
   position: fixed;

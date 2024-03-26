@@ -1,0 +1,142 @@
+problemas:
+  1 - ícones e design num geral (especialmente o login):
+    a) arredondar bordas dos botões de "status" -------- feito
+    b) centralizar melhor os elementos da tela de login -------- feito
+    c) melhorar imagens com o nome da novacap e não só a logo -------- feito
+    d) editar a imagem em relação ao design da pg (photoshop/clip)
+    não pintar mas s mudar as config de tonalidade
+    e) interatividade cm o botão "criar +" (js)
+    f) criar mais interações num geral (estudar sobre alguns frameworks js)
+    g) tirar "sobre" e "contato" do cabeçalho dar uma resolução mais estratégica -------- feito
+    h) add novo papel de parede mais transparente no cabeçalho
+  2 - tornar "login" e "details" responsivo:
+    a) botão para voltar de "status"
+    b) botão "criar +" (add um card e id + status)
+    c) ir para a tela do perfil do usuário
+    d) fazer barra de busca funcionar para os elementos existentes
+    e) modo edição apenas para perfis autorizados
+    f) ato de login e cadastro responsivo
+  3 - barra de pesquisa não muda/limpa a pesquisa quando passo para outra aba como
+  "materiais" provavelmente pq estão como ramificações da mesma barra de busca.
+  Obs: o botão "criar +" tmb está aparecendo em todas as abas
+  4 - o usuário também está recebendo a barra de pesquisa quando na verdade 
+  deveria mostrar o perfil.
+  5 - configurar modal para funcionar corretmante (estudar novamente sobre a DOM).
+  6 - estudar a sobre UI/UX e a implementação do Figma.
+  7 - criar cadastro (não lembro se era cadastro do usuário ou dos materiais).
+  8 - criar as telas "sobre" e "contato"
+  9 - mudar a programação pro inglês!!! 
+  (os já publicados no GitHub tmb além dos nomes e descrição)
+  10 - montar a arquitetura (digrama de classes UML) do projeto
+  11 - não estou conseguindo mudar o tamanho da logo -------- feito
+
+  As próximas telas provavelmente são:
+  1- Perfil do usuário (certeza)
+  2- edição das informações em "details" (mais provável por função)
+  3- criar + (não precisa criar outro arquivo)
+  4- uma tela diferente para cada aba (resolveria o problema 3)
+  +: o que é ADASA? unvcp? criação de software. BAIXAR LINUX E MATLAB!!!
+
+
+  atualizações:
+  1- preciso fazer funconar:
+  a) botão-olho
+    .botao-olho::before {
+  content: '\f06e'; /* código do ícone de olho da Font Awesome */
+  font-family: 'FontAwesome'; /* especifica a fonte da Font Awesome */
+  font-size: 20px;
+}
+  b) botão criar js
+    const botaoCriar = document.querySelector('.botao-criar');
+botaoCriar.addEventListener('click', function() {
+  // Adicione aqui o código para criar algo ao clicar no botão "Criar +"
+  // Por exemplo, abrir um modal para criar uma nova solicitação
+  console.log('Botão Criar + clicado!');
+});
+  c) arrumar login
+    .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centralizar na horizontal */
+  justify-content: center; /* Centralizar na vertical */
+  min-height: 100vh;
+}
+
+<div id="sobre" class="sobre-content">
+</div>
+
+.sobre-content {
+  display: none;
+  /* Estilos adicionais para o conteúdo do "Sobre" */
+}
+
+.welcome-image:hover + #sobre {
+  display: block;
+  /* Adicione animações conforme desejado */
+}
+
+  d) ajustar botão criar
+    .botao-criar {
+  /* Outros estilos aqui */
+  transition: transform 0.3s ease;
+}
+
+.botao-criar:hover {
+  transform: scale(1.1); /* Aumenta o tamanho em 10% */
+}
+  e) add qnt. material:
+  <div class="informacao">
+  <span class="id">ID: 15612316</span>
+  <span class="status enviado">Enviado</span>
+</div>
+
+<div class="informacao">
+  <span class="id">ID: 15612316</span>
+  <span class="quantidade">Quantidade: 100</span>
+  <span class="status enviado">Enviado</span>
+</div>
+
+  f) tornar login e details responsivo:
+  (css)
+  @media screen and (max-width: 768px) {
+  /* Estilos para telas menores aqui */
+}
+  (html)
+  <div class="criar">
+  <button class="botao-voltar">Voltar</button>
+  <button class="botao-criar">Criar +</button>
+</div>
+
+  g) criar tela de perfil do usuario:
+  <div class="informacao">
+  <button class="botao-perfil">Ver Perfil</button>
+</div>
+
+  h) barra de pesquisa:
+  (js)
+  document.querySelector('.botao-selecao[data-filtro="materiais"]').addEventListener('click', function() {
+  campoBusca.value = ''; // Limpar o campo de busca ao clicar na aba de materiais
+});
+
+
+prioridade:
+1 - ícones e design num geral (especialmente o login):
+    a) centralizar melhor os elementos da tela de login
+    b) interatividade/animação cm o botão "criar +" assim como no "buscar"
+    c) criar mais interações no projeto em um geral (utilize alguns frameworks js para fazer animação)
+    d) tirar "sobre" e "contato" do cabeçalho colocar o "sobre" como uma animação da imagem de boasvindas sendo virado para mostrar o "sobre" como uma carta e o contato no footer
+    e) adicionar a quantidade de materiais solicitada entre o id e o processo no mesmo card
+  2 - tornar "login" e "details" responsivo:
+    a) botão para "voltar" ao lado do botão "criar +" na pasta "solicitações/detalhes" para voltar para a tela de "solicitações/status"
+    b) botão "criar +" (add um card de id + status) editável para pôr as informações da solicitação
+    c) ir para a tela do perfil do usuário quando clicar no botão "usuário" (ainda não fiz essa tela mas você pode criar)
+    d) fazer barra de busca funcionar para os elementos existentes (buscar com base no número de id da solicitação)
+    f) ato de login responsivo
+  3 - barra de pesquisa não muda/limpa a pesquisa quando passo para outra aba como
+  "materiais" provavelmente pq estão como ramificações da mesma barra de busca.
+  Obs: o botão "criar +" também está aparecendo em todas as abas
+  4 - o usuário também está recebendo a barra de pesquisa quando na verdade 
+  deveria mostrar o perfil.
+  5 - configurar modal para funcionar corretamente (estudo sobre DOM).
+  6 - criar cadastrar materiais.
+  7 - mudar a programação pro inglês!!! (pode fazer os comentário em português)

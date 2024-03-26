@@ -24,6 +24,11 @@ document.addEventListener('DOMContentLoaded', function() {
   
     const botaoBusca = document.querySelector('.botao-busca');
     const campoBusca = document.querySelector('input[type="text"]');
+    const botaoCriar = document.querySelector('.botao-criar');
+
+    botaoCriar.addEventListener('click', function() {
+      console.log('Botão Criar + clicado!');
+    });
   
     botaoBusca.addEventListener('click', function() {
       const termoBusca = campoBusca.value.toLowerCase();
